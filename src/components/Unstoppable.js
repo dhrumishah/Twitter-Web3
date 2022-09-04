@@ -3,7 +3,7 @@ import UAuth from "@uauth/js";
 import { Button } from "react-bootstrap";
 const unstoppableAuth = new UAuth({
   clientID: "71643f65-b6c6-4d89-8589-ed9684011a98",
-  redirectUri: "http://localhost:3000",
+  redirectUri: "https://twitter-web3-kuzy4mgjp-adiig7.vercel.app/",
 });
 function UnstoppableDomainLogin() {
   const [Uauth, setUauth] = useState();

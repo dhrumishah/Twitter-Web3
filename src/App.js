@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Feed from "./components/Feed";
 import Widgets from "./components/Widgets";
 import UDomain from "./components/Unstoppable";
+import "./components/unstoppable.css";
 
 function App() {
   const [currentAccount, setCurrentAccount] = useState("");
@@ -40,9 +41,9 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    connectWallet();
-  });
+  // useEffect(() => {
+  //   connectWallet();
+  // });
 
   return (
     <div>

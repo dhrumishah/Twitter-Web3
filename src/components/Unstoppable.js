@@ -11,7 +11,7 @@ function UnstoppableDomainLogin() {
     try {
       const authorization = await unstoppableAuth.loginWithPopup();
       setUauth(JSON.parse(JSON.stringify(authorization))["idToken"]);
-      await authenticate();
+      // await authenticate();
     } catch (error) {
       console.error(error);
     }
@@ -23,7 +23,7 @@ function UnstoppableDomainLogin() {
   }
   return (
     <>
-      <Button onClick={log}>
+      <Button onClick={log} className="btn">
         {Uauth != null ? Uauth["sub"] : "Login with UNSD"}
       </Button>
     </>
